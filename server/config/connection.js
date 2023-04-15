@@ -8,9 +8,9 @@ mongoose
     useFindAndModify: false,
   })
   .then(
-    console.log("Connected to mongodb atlas").catch((error) => {
-      console.log("error", error);
-    })
+    console.log("Connected to mongodb atlas"),
+
+    console.log("error", error)
   );
 
 module.exports = mongoose.connection;
