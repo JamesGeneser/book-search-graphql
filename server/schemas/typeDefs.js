@@ -5,10 +5,11 @@ type User {
     _id: ID
     username: String
     email: String
-    bookCount
-    savedBooks: [Books]!
+    bookCount: Int
+    savedBooks: [Book]
 
 type Book {
+    _id: ID
     bookId: ID
     authors: String
     description: String
