@@ -7,10 +7,6 @@ mongoose
     useCreateIndex: true,
     useFindAndModify: false,
   })
-  .then(
-    console.log("Connected to mongodb atlas"),
-
-    console.log("error", error)
-  );
+  .then(console.log("Connected to mongodb atlas"));
 
 module.exports = mongoose.connection;
