@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const { path } = require("../models/Book");
-require("dotenv").config({ path: path.resolve(__dirname, "../.env") });
+require("dotenv").config({ path: path.resolve(__dirname, "../../.env") });
 mongoose
   .connect(process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/googlebooks", {
     useNewUrlParser: true,
